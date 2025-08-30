@@ -1,0 +1,8 @@
+Single label + TLD (e.g., security@acme.io):
+/\bsecurity@[A-Za-z0-9-]+\.[A-Za-z]{2,}\b/
+
+Allow multi-label domains (e.g., security@acme.co.uk):
+/\bsecurity@(?:[A-Za-z0-9-]+\.)+[A-Za-z]{2,}\b/
+
+If you also want to allow underscores in the label (looser):
+/\bsecurity@(?:[A-Za-z0-9_-]+\.)+[A-Za-z]{2,}\b/
